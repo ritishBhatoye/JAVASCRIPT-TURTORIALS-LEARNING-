@@ -47,9 +47,29 @@
 //          .map((num)=>num+1)
 //          .filter((num)=> num>=40)
 //  console.log(N)
-const N=[1,2,3]
-const Sum=N.reduce((a,c)=>{
-    console.log(`acc: ${a} and currval : ${c}`)
-    return a+c
-},0)
- console.log(Sum)
+// const N=[1,2,3]
+// const Sum=N.reduce((a,c)=>{
+//     console.log(`acc: ${a} and currval : ${c}`)
+//     return a+c
+// },0)
+//  console.log(Sum)
+const shoppingCart=[
+    {
+     itemName:"React Course",
+     price:300,
+    },
+    {
+     itemName:"Python Course",
+     price:600,
+    },
+    {
+     itemName:"MERN",
+     price:800,
+    },
+    {
+        itemName:"React-Native",
+        price:200    
+    }
+]
+const SumPrice=shoppingCart.reduce((a,item)=>a+item.price,0)
+console.log(`${SumPrice} is TOTAL PRICE`)
