@@ -49,6 +49,7 @@
 //  console.log(N)
 const N=[1,2,3]
 const Sum=N.reduce((a,c)=>{
+    console.log(`acc: ${a} and currval : ${c}`)
     return a+c
 },0)
  console.log(Sum)
