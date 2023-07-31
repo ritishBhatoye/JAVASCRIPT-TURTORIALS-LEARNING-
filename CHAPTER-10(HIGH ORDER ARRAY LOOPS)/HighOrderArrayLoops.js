@@ -4,3 +4,8 @@ for(const i in arr){
     console.log(arr[i]);
 }
 //MAPS
+const m=new Map();
+m.set('IN','India')
+m.set('USA','United States Of America')
+m.set('Fr','France')
+console.log(m);
