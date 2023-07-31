@@ -18,6 +18,7 @@ const c=["JS","RUBY","JAVA","PYTHON","CPP"];
 // c.forEach((i,index,c)=>{
 //     console.log(i,index,c)
 // })
+//FOR EACH FOR LOOPING INTO OBJECT
 const code=[
     {
         languageName:"Javascript",
