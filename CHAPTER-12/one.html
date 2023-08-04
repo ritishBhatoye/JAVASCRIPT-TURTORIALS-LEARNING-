@@ -1,0 +1,59 @@
+<!-- TASK TO REMOVE IMAGE ON CLICKING-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+<style>
+    ul{
+        width: 100%;
+        display: flex;
+        flex:row;
+      
+    }
+    ul li{
+        width: 250px;
+        padding: 10px;
+        list-style-type: none;
+    }
+    ul li img{
+        width: 100%;
+    }
+    body{
+        background-color: #414141;
+    }
+</style>
+</head>
+<body>
+    <h2>AMAZING IMAGES</h2>
+<ul id="images">
+    <li><img src="https://images.pexels.com/photos/17838489/pexels-photo-17838489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="horse" widht="200px"  ></li>
+    <li><img src="https://images.pexels.com/photos/17743151/pexels-photo-17743151/free-photo-of-processed-with-vsco-with-u3-preset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="chess" widht="200px" ></li>
+    <li><img src="https://images.pexels.com/photos/2907301/pexels-photo-2907301.jpeg" id="gym" widht="200px" ></li>
+    <li><img src="https://images.pexels.com/photos/2029731/pexels-photo-2029731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" id="bedromm" widht="200px" ></li>
+    <li><img src="https://images.pexels.com/photos/13183414/pexels-photo-13183414.jpeg" id="Gucci" widht="200px" ></li>
+</ul>    
+</body>
+<script>
+    // document.getElementById('horse').onclick=function(){
+    //     alert('HORSE CLICKED');
+    // }
+
+
+
+     //EVENT TYPES,EVENT TIMESTAMP,defaultPrevented
+    //target,toElement,srcElement,currentTarget,
+    //clientX,clientY,screenX,screenY
+    //altkey,ctrlkey,shiftkey,keyCode,
+    document.getElementById('horse').addEventListener('click',function(){
+        alert('CLICKING HORSE IMAGE')
+    })
+   document.querySelector('#images').addEventListener(
+    'click',function(e){
+        console.log(e.target);
+        e.target.parentNode.remove();
+    },false
+   )
+</script>
+</html>
