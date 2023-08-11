@@ -6,4 +6,4 @@ document.querySelector('#parent').addEventListener('click',function(){
 },true)
 document.querySelector('#child').addEventListener('click',function(){
     console.log("Child Clicked!")
-},true)
+},true ) 

@@ -5,7 +5,7 @@ const score=100;
 const scoreValue=100.3
 const isLoggedIn=false;
 const outSideTemp=null;
-let userEmail;
+let  userEmail;
 
 const ig=Symbol('123');
 const anotherId=Symbol('123');
